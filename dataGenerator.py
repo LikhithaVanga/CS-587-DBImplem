@@ -7,6 +7,7 @@ def convert(uni):
     i = 6
     while uni > 0:
         rem = uni % 26
+        # dnfbhsdfkjf
         result[i] = chr(ord('A')+rem)
         uni = uni // 26
         i -= 1
@@ -54,7 +55,7 @@ def generate_relation(tupCount, fileName):
 
 if __name__ == '__main__':
     if len(sys.argv) != 3:
-        print("Usage: python wb.py 1000 onektup.csv")
+        print("Usage: python dataGenerator.py 1000 onektup.csv")
     tupCount = int(sys.argv[1])
     fileName = sys.argv[2]
     generate_relation(tupCount, fileName)
